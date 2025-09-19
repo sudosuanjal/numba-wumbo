@@ -3,9 +3,11 @@ name = "numba-wumbo"
 version = "0.1.0"
 edition = "2021"
 authors = ["Anjal (@sudosuanjal)"]
+homepage = "https://x.com/sudosuanjal"
 description = "A goofy terminal game where you guess the secret number 🎮"
 license = "MIT"
 repository = "https://github.com/sudosuanjal/numba-wumbo"
+readme = "README.md"
 
 [[bin]]
 name = "numba-wumbo"      

@@ -1,6 +1,6 @@
-use std::io;
-use rand::Rng;
 use colored::Colorize;
+use rand::Rng;
+use std::io;
 
 fn main() {
     loop {
@@ -11,7 +11,9 @@ fn main() {
 
         // Get menu choice
         let mut choice = String::new();
-        io::stdin().read_line(&mut choice).expect("Error reading input");
+        io::stdin()
+            .read_line(&mut choice)
+            .expect("Error reading input");
         let choice = choice.trim();
 
         match choice {
@@ -34,7 +36,9 @@ fn play_game() {
         println!("Enter your guess (1-1000):");
 
         let mut num = String::new();
-        io::stdin().read_line(&mut num).expect("Error reading input");
+        io::stdin()
+            .read_line(&mut num)
+            .expect("Error reading input");
 
         let num: u32 = match num.trim().parse() {
             Ok(n) => n,
@@ -59,8 +63,7 @@ fn show_about() {
     println!("\n{}", "📜 About NumbaWumbo 📜".bold());
     println!(
         "{}",
-        "A goofy lil' terminal game where you guess a number between 1 and 1000."
-            .bright_blue()
+        "A goofy lil' terminal game where you guess a number between 1 and 1000.".bright_blue()
     );
     println!(
         "{}",
