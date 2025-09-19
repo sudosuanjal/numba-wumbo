@@ -1,87 +1,101 @@
-Perfect 👌 since you’ve published it, here’s the **full `README.md` file** content, ready to drop into your repo:
+# 🎲 numba-wumbo
 
-````md
-# 🎮 NumbaWumbo
-
-A goofy lil' terminal game where you try to guess the secret number chosen by RNG magic ✨.  
-Built with Rust 🦀, full of Gen-Z slang, and way too many emojis.
+**numba-wumbo** is a goofy little terminal game where you try to guess the secret number between **1 and 1000**.  
+It’s simple, fun, and brings RNG magic straight to your CLI.
 
 ---
 
-## 🔢 How it works
+## 🚀 Installation
 
-- The game picks a **random number between 1 and 1000**.
-- You keep guessing until you get it right.
-- Too high? Too low? The game roasts you until you find the W.
-
----
-
-## 🚀 Install & Play
-
-### From crates.io
+### From [crates.io](https://crates.io/crates/numba-wumbo)
 
 ```bash
 cargo install numba-wumbo
-numba-wumbo
 ```
-````
 
-### From source
-
-```bash
-git clone https://github.com/sudosuanjal/numba-wumbo.git
-cd numba-wumbo
-cargo run
-```
+This will make the `numba-wumbo` command available globally.
 
 ---
 
-## 📖 Menu Options
+## 🎮 How to Play
 
-When you launch the game, you’ll see:
+Run the game in your terminal:
+
+```bash
+numba-wumbo
+```
+
+You’ll see a simple menu:
 
 ```
-🎮 Welcome to NumbaWumbo 🎮
+🎲 Welcome to numba-wumbo! 🎲
 1. Play the game
 2. About
 3. Quit
 ```
 
-- **Play the game** → start guessing numbers (1–1000).
-- **About** → see credits + link to the creator.
-- **Quit** → rage quit like a pro gamer.
+- Choose **1** to start guessing a random number between 1 and 1000.
+- You’ll get feedback if your guess is **too high** or **too low** until you nail the correct number.
+- Choose **2** to see game info.
+- Choose **3** to quit.
 
 ---
 
-## ✨ Example Gameplay
+## 📸 Example Gameplay
 
 ```
-🔥 Starting the game... 🔥
+🎲 Welcome to numba-wumbo! 🎲
+1. Play the game
+2. About
+3. Quit
+Enter your choice: 1
+
 Enter your guess (1-1000):
 500
-Too thicc, dial it down 📉
-200
-Too smol, pump it up 📈
-420
-W no cap! You nailed it 🏆✨
+Too small! Try again.
+
+750
+Too big! Try again.
+
+694
+🎉 You guessed it! The secret number was 694!
 ```
+
+---
+
+## 📦 Development
+
+Clone and run locally:
+
+```bash
+git clone https://github.com/sudosuanjal/numba-wumbo
+cd numba-wumbo
+cargo run
+```
+
+Format & lint before committing:
+
+```bash
+cargo fmt
+cargo clippy
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to fork the repo and open a PR.
 
 ---
 
 ## 👤 Author
 
-Made with ❤️ by [Anjal (@sudosuanjal)](https://x.com/sudosuanjal)
-Drop a follow if you vibe with Rust, Web3, or chaotic coding energy.
+**Anjal**  
+🐦 [@sudosuanjal](https://x.com/sudosuanjal)
 
 ---
 
-## 📜 License
+## 📝 License
 
-MIT – do whatever you want, just don’t sue me bro.
-
-```
-
----
-
-👉 Do you want me to also add some **crates.io + GitHub badges** (like version, downloads, license) at the top so it looks extra legit?
-```
+This project is licensed under the [MIT License](LICENSE).
